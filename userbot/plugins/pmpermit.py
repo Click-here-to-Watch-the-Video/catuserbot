@@ -247,8 +247,6 @@ if Config.PRIVATE_GROUP_ID is not None:
                         totalwarns=totalwarns,
                         warns=warns,
                     )
-                    + "\n\n"
-                    + "**Send** `/start` ** so that my master can decide why you're here.**"
                 )
             else:
 
@@ -256,7 +254,6 @@ if Config.PRIVATE_GROUP_ID is not None:
                     f"`Hi `{mention}`, I haven't approved you yet to personal message me, Don't spam my inbox."
                     f"Just say the reason and wait until you get approved.\
                                     \n\nyou have {warns}/{totalwarns} warns`\
-                                    \n\n**Send** `/start` **so that my master can decide why you're here.**"
                 )
         else:
             if Config.CUSTOM_PMPERMIT_TEXT:
